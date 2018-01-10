@@ -20,7 +20,7 @@
           <div class="row">
             <div class="col-xs-4">
               <label>Title</label>
-              <input type="text" class="form-control" name="title" placeholder="Enter title">
+              <input type="text" class="form-control" name="title" placeholder="Enter title" maxlength="255">
               <small id="titleHelp" class="form-text text-muted">Maximum of 255 characters</small>
             </div>
           </div>
@@ -29,7 +29,7 @@
           <div class="row">
             <div class="col-xs-4">
               <label>Description</label>
-              <textarea class="form-control" rows="3" placeholder="Enter description" name="description"></textarea>
+              <textarea class="form-control" rows="3" placeholder="Enter description" name="description" minlength="3" maxlength="1000"></textarea>
               <small id="descriptionHelp" class="form-text text-muted">Between 3-1000 characters</small>
             </div>
           </div>

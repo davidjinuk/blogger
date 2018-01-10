@@ -36,6 +36,7 @@ app.post('/posts/submit', function(req, res){
       description: description
     };
     allPosts.push(post);
+    res.render('posts');
   };
 });
 
