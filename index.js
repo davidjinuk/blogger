@@ -13,6 +13,14 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
+app.get('/posts', function(req, res){
+  res.render('posts');
+});
+
+app.get('/posts/submit', function(req, res){
+  res.render('submit');
+});
+
 app.listen(3000, function(){
   console.log('Server started on PORT 3000');
 });
