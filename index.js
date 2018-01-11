@@ -16,7 +16,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/posts', function(req, res){
-  res.render('posts');
+  res.render('posts', { allPosts: allPosts });
 });
 
 app.get('/posts/submit', function(req, res){
@@ -36,7 +36,7 @@ app.post('/posts/submit', function(req, res){
       description: description
     };
     allPosts.push(post);
-    res.render('posts');
+    res.redirect('/');
   };
 });
 

@@ -5,7 +5,26 @@
   <% include ../views/partials/_header %>
 
   <body>
-    POSTS
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i = allPosts.length - 1; i >= 0; i--) { %>
+            <tr>
+              <th><%= allPosts[i].email %></th>
+              <th><%= allPosts[i].title %></th>
+              <th><%= allPosts[i].description %></th>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
   </body>
 
 </html>
